@@ -48,7 +48,10 @@ export interface EducationData {
   location: string;
   period: string;
   details: string;
+  notes?: string;
 }
+
+export type EducationItem = EducationData;
 
 export interface CertificateData {
   title: string;
@@ -58,7 +61,10 @@ export interface CertificateData {
   credentialId?: string;
   verificationUrl?: string;
   summary: string;
+  note?: string;
 }
+
+export type CertificateItem = CertificateData;
 
 export interface SkillGroup {
   name: string;
