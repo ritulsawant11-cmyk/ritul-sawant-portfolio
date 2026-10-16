@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 420" width="350" height="420">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#241b65" />
+      <stop offset="100%" stop-color="#403299" />
+    </linearGradient>
+  </defs>
+  <rect width="350" height="420" rx="10" fill="url(#bg4)" />
+  <circle cx="175" cy="180" r="100" fill="#2e247a" stroke="#3fcaff" stroke-width="3" stroke-opacity="0.4" />
+  <!-- American Football Trophy / Ball -->
+  <ellipse cx="175" cy="180" rx="65" ry="42" fill="#3fcaff" transform="rotate(-30 175 180)" />
+  <line x1="130" y1="205" x2="220" y2="155" stroke="#ffffff" stroke-width="3" />
+  <line x1="160" y1="175" x2="175" y2="195" stroke="#ffffff" stroke-width="2.5" />
+  <line x1="175" y1="165" x2="190" y2="185" stroke="#ffffff" stroke-width="2.5" />
+  <text x="175" y="320" font-family="'Rajdhani', sans-serif" font-weight="700" font-size="22" fill="#ffffff" text-anchor="middle" letter-spacing="2">STADIUM 2026</text>
+  <text x="175" y="350" font-family="'Roboto', sans-serif" font-size="13" fill="#a4ffb0" text-anchor="middle">MAJOR LEAGUE</text>
+</svg>

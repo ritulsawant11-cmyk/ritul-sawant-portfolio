@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 420" width="350" height="420">
+  <defs>
+    <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f1654" />
+      <stop offset="100%" stop-color="#3c2f8f" />
+    </linearGradient>
+  </defs>
+  <rect width="350" height="420" rx="10" fill="url(#bg1)" />
+  <circle cx="175" cy="180" r="100" fill="#2c2172" stroke="#3fcaff" stroke-width="3" stroke-opacity="0.4" />
+  <!-- Cyber Samurai / Sword Icon -->
+  <path d="M 120 250 L 230 110 M 230 110 L 245 125 M 245 125 L 135 265 Z" fill="#3fcaff" />
+  <line x1="105" y1="265" x2="145" y2="225" stroke="#a4ffb0" stroke-width="6" stroke-linecap="round" />
+  <text x="175" y="320" font-family="'Rajdhani', sans-serif" font-weight="700" font-size="22" fill="#ffffff" text-anchor="middle" letter-spacing="2">PS4 ACTION</text>
+  <text x="175" y="350" font-family="'Roboto', sans-serif" font-size="13" fill="#a4ffb0" text-anchor="middle">NEXT-GEN RELEASE</text>
+</svg>

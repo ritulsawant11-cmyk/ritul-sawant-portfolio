@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 400" width="550" height="400">
+  <defs>
+    <linearGradient id="chartGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3fcaff" />
+      <stop offset="100%" stop-color="#a4ffb0" />
+    </linearGradient>
+  </defs>
+  <rect width="550" height="400" rx="12" fill="#1b1248" />
+  <!-- Grid Lines -->
+  <g stroke="#3b328b" stroke-width="1" stroke-dasharray="4 4">
+    <line x1="40" y1="80" x2="510" y2="80" />
+    <line x1="40" y1="140" x2="510" y2="140" />
+    <line x1="40" y1="200" x2="510" y2="200" />
+    <line x1="40" y1="260" x2="510" y2="260" />
+    <line x1="40" y1="320" x2="510" y2="320" />
+  </g>
+  <!-- Chart Bars & Trends -->
+  <path d="M 60 300 Q 150 180 240 240 T 400 120 T 500 80" fill="none" stroke="url(#chartGrad)" stroke-width="4" />
+  <!-- Area glow under curve -->
+  <path d="M 60 300 Q 150 180 240 240 T 400 120 T 500 80 L 500 320 L 60 320 Z" fill="url(#chartGrad)" opacity="0.15" />
+  
+  <!-- Bar markers -->
+  <rect x="90" y="220" width="22" height="100" rx="4" fill="#3fcaff" opacity="0.8" />
+  <rect x="170" y="180" width="22" height="140" rx="4" fill="#a4ffb0" opacity="0.8" />
+  <rect x="250" y="240" width="22" height="80" rx="4" fill="#3fcaff" opacity="0.8" />
+  <rect x="330" y="150" width="22" height="170" rx="4" fill="#a4ffb0" opacity="0.9" />
+  <rect x="410" y="110" width="22" height="210" rx="4" fill="url(#chartGrad)" />
+  
+  <!-- Data point badges -->
+  <circle cx="410" cy="110" r="6" fill="#ffffff" stroke="#3fcaff" stroke-width="3" />
+  <text x="410" y="90" font-family="'Rajdhani', sans-serif" font-weight="700" font-size="16" fill="#a4ffb0" text-anchor="middle">98.4%</text>
+  <text x="50" y="45" font-family="'Rajdhani', sans-serif" font-weight="700" font-size="20" fill="#ffffff">LIVE BROADCAST METRICS</text>
+</svg>

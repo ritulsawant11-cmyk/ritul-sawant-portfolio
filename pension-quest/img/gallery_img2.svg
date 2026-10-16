@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 320" width="540" height="320">
+  <defs>
+    <linearGradient id="gal2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#182348" />
+      <stop offset="100%" stop-color="#0b6370" />
+    </linearGradient>
+  </defs>
+  <rect width="540" height="320" rx="8" fill="url(#gal2)" />
+  <!-- Arena Colosseum -->
+  <ellipse cx="270" cy="180" rx="200" ry="90" fill="#132742" stroke="#3fcaff" stroke-width="3" />
+  <ellipse cx="270" cy="180" rx="140" ry="60" fill="#09434d" stroke="#a4ffb0" stroke-width="2" />
+  <polygon points="270,120 295,170 245,170" fill="#ffc000" />
+  <circle cx="270" cy="190" r="14" fill="#ffffff" />
+  <text x="270" y="295" font-family="'Rajdhani', sans-serif" font-weight="700" font-size="18" fill="#ffffff" text-anchor="middle" letter-spacing="2">CHAMPIONSHIP COLISEUM</text>
+</svg>

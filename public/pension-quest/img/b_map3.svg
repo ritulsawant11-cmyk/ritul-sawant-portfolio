@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 420" width="350" height="420">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#181145" />
+      <stop offset="100%" stop-color="#2c1f75" />
+    </linearGradient>
+  </defs>
+  <rect width="350" height="420" rx="10" fill="url(#bg3)" />
+  <circle cx="175" cy="180" r="100" fill="#20175b" stroke="#a4ffb0" stroke-width="3" stroke-opacity="0.4" />
+  <!-- Xbox / Neon Speed Icon -->
+  <path d="M 125 140 Q 175 180 225 140 M 125 220 Q 175 180 225 220" fill="none" stroke="#a4ffb0" stroke-width="12" stroke-linecap="round" />
+  <text x="175" y="320" font-family="'Rajdhani', sans-serif" font-weight="700" font-size="22" fill="#ffffff" text-anchor="middle" letter-spacing="2">XBOX ULTIMATE</text>
+  <text x="175" y="350" font-family="'Roboto', sans-serif" font-size="13" fill="#3fcaff" text-anchor="middle">ONLINE CHAMPIONSHIP</text>
+</svg>

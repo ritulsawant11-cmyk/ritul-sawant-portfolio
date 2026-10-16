@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 420" width="350" height="420">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#17253f" />
+      <stop offset="100%" stop-color="#087f8c" />
+    </linearGradient>
+  </defs>
+  <rect width="350" height="420" rx="10" fill="url(#bg2)" />
+  <circle cx="175" cy="180" r="100" fill="#122c4d" stroke="#f2bd57" stroke-width="3" stroke-opacity="0.6" />
+  <!-- PensionQuest / Alex Compass Shield -->
+  <polygon points="175,100 245,145 245,225 175,270 105,225 105,145" fill="#06545c" stroke="#f2bd57" stroke-width="3" />
+  <path d="M 145 185 L 175 140 L 205 185 L 175 230 Z" fill="#f2bd57" />
+  <circle cx="175" cy="185" r="8" fill="#ffffff" />
+  <text x="175" y="320" font-family="'Rajdhani', sans-serif" font-weight="700" font-size="22" fill="#ffffff" text-anchor="middle" letter-spacing="2">PENSIONQUEST</text>
+  <text x="175" y="350" font-family="'Roboto', sans-serif" font-size="13" fill="#f2bd57" text-anchor="middle">PLAYABLE CHAPTER 1</text>
+</svg>

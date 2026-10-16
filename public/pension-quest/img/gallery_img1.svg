@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 320" width="540" height="320">
+  <defs>
+    <linearGradient id="gal1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1f1454" />
+      <stop offset="100%" stop-color="#43359d" />
+    </linearGradient>
+  </defs>
+  <rect width="540" height="320" rx="8" fill="url(#gal1)" />
+  <!-- Neon Cyber Cityscape -->
+  <polygon points="40,320 40,160 90,160 90,320" fill="#291b6f" />
+  <polygon points="100,320 100,110 160,110 160,320" fill="#342387" />
+  <polygon points="180,320 180,80 250,80 250,320" fill="#20135c" />
+  <polygon points="270,320 270,140 330,140 330,320" fill="#382691" />
+  <polygon points="350,320 350,100 420,100 420,320" fill="#2c1e7a" />
+  <polygon points="440,320 440,170 500,170 500,320" fill="#342387" />
+  <circle cx="215" cy="50" r="28" fill="#3fcaff" opacity="0.9" />
+  <line x1="0" y1="260" x2="540" y2="260" stroke="#a4ffb0" stroke-width="2" />
+  <text x="270" y="295" font-family="'Rajdhani', sans-serif" font-weight="700" font-size="18" fill="#ffffff" text-anchor="middle" letter-spacing="2">NEON METROPOLIS 2088</text>
+</svg>

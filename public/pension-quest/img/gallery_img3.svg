@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 360" width="750" height="360">
+  <defs>
+    <linearGradient id="gal3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#241763" />
+      <stop offset="50%" stop-color="#3b2b8d" />
+      <stop offset="100%" stop-color="#1a104c" />
+    </linearGradient>
+  </defs>
+  <rect width="750" height="360" rx="8" fill="url(#gal3)" />
+  <!-- Wide Panorama Battle Screen -->
+  <circle cx="375" cy="180" r="140" fill="none" stroke="#3fcaff" stroke-width="2" stroke-dasharray="10 6" />
+  <polygon points="375,70 470,220 280,220" fill="none" stroke="#a4ffb0" stroke-width="3" />
+  <circle cx="375" cy="170" r="45" fill="#3fcaff" opacity="0.3" />
+  <path d="M 120 260 L 250 160 L 375 220 L 500 140 L 630 260" fill="none" stroke="#a4ffb0" stroke-width="4" />
+  <text x="375" y="320" font-family="'Rajdhani', sans-serif" font-weight="700" font-size="22" fill="#ffffff" text-anchor="middle" letter-spacing="3">GLOBAL TOURNAMENT PANORAMA</text>
+</svg>

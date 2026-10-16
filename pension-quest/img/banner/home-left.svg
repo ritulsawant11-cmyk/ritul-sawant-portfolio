@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 640" width="540" height="640">
+  <defs>
+    <linearGradient id="heroGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3fcaff" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#a4ffb0" stop-opacity="0.2" />
+    </linearGradient>
+    <linearGradient id="armorGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b328b" />
+      <stop offset="50%" stop-color="#231a60" />
+      <stop offset="100%" stop-color="#191244" />
+    </linearGradient>
+    <radialGradient id="cyberAura" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#3fcaff" stop-opacity="0.35" />
+      <stop offset="70%" stop-color="#a4ffb0" stop-opacity="0.08" />
+      <stop offset="100%" stop-color="#231a60" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <!-- Background Aura -->
+  <circle cx="270" cy="320" r="240" fill="url(#cyberAura)" />
+  
+  <!-- Cybernetic Hex Pattern -->
+  <g stroke="#3fcaff" stroke-width="1.5" stroke-opacity="0.25" fill="none">
+    <polygon points="270,120 310,143 310,189 270,212 230,189 230,143" />
+    <polygon points="350,166 390,189 390,235 350,258 310,235 310,189" />
+    <polygon points="190,166 230,189 230,235 190,258 150,235 150,189" />
+    <polygon points="270,212 310,235 310,281 270,304 230,281 230,235" />
+    <circle cx="270" cy="320" r="190" stroke-dasharray="8 6" />
+  </g>
+
+  <!-- Gaming Character Silhouette & Tech Armor -->
+  <g transform="translate(90, 80)">
+    <!-- Cape / Wings -->
+    <path d="M 180 180 L 330 380 L 290 480 L 180 340 L 70 480 L 30 380 Z" fill="#2c226e" opacity="0.8" />
+    <path d="M 180 180 L 310 370 L 280 440 L 180 320 L 80 440 L 50 370 Z" fill="url(#armorGrad)" />
+    
+    <!-- Torso -->
+    <path d="M 120 180 L 240 180 L 260 340 L 180 420 L 100 340 Z" fill="url(#armorGrad)" stroke="#3fcaff" stroke-width="2" />
+    
+    <!-- Chest Glow Core -->
+    <polygon points="180,220 205,255 180,290 155,255" fill="#3fcaff" opacity="0.9" filter="drop-shadow(0 0 10px #3fcaff)" />
+    <circle cx="180" cy="255" r="7" fill="#ffffff" />
+    <line x1="180" y1="290" x2="180" y2="350" stroke="#a4ffb0" stroke-width="3" />
+    <line x1="150" y1="260" x2="110" y2="280" stroke="#3fcaff" stroke-width="2" />
+    <line x1="210" y1="260" x2="250" y2="280" stroke="#3fcaff" stroke-width="2" />
+
+    <!-- Shoulders -->
+    <path d="M 90 180 L 130 160 L 120 240 L 80 230 Z" fill="#44398f" stroke="#a4ffb0" stroke-width="1.5" />
+    <path d="M 270 180 L 230 160 L 240 240 L 280 230 Z" fill="#44398f" stroke="#a4ffb0" stroke-width="1.5" />
+
+    <!-- Head / Cyber Visor -->
+    <ellipse cx="180" cy="115" rx="35" ry="45" fill="#1b1244" stroke="#3fcaff" stroke-width="2" />
+    <rect x="155" y="105" width="50" height="14" rx="7" fill="#3fcaff" />
+    <line x1="160" y1="112" x2="200" y2="112" stroke="#ffffff" stroke-width="2" />
+    
+    <!-- Headset -->
+    <rect x="140" y="100" width="10" height="25" rx="4" fill="#a4ffb0" />
+    <rect x="210" y="100" width="10" height="25" rx="4" fill="#a4ffb0" />
+    <path d="M 145 100 A 38 38 0 0 1 215 100" fill="none" stroke="#3fcaff" stroke-width="5" />
+    <path d="M 215 118 Q 210 135 195 136" fill="none" stroke="#a4ffb0" stroke-width="3" stroke-linecap="round" />
+
+    <!-- Glowing Tech Lines on Legs -->
+    <line x1="140" y1="390" x2="130" y2="480" stroke="#3fcaff" stroke-width="4" stroke-linecap="round" />
+    <line x1="220" y1="390" x2="230" y2="480" stroke="#3fcaff" stroke-width="4" stroke-linecap="round" />
+  </g>
+</svg>

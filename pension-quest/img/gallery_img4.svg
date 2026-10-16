@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 710" width="380" height="710">
+  <defs>
+    <linearGradient id="gal4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1d1252" />
+      <stop offset="100%" stop-color="#3d2d96" />
+    </linearGradient>
+  </defs>
+  <rect width="380" height="710" rx="8" fill="url(#gal4)" />
+  <!-- Tall Vertical Cyber Mech Hero -->
+  <line x1="190" y1="40" x2="190" y2="650" stroke="#3fcaff" stroke-width="1.5" stroke-opacity="0.3" stroke-dasharray="8 6" />
+  <polygon points="190,80 260,180 230,340 190,440 150,340 120,180" fill="#2d1f7c" stroke="#a4ffb0" stroke-width="2" />
+  <ellipse cx="190" cy="140" rx="30" ry="40" fill="#1b1049" stroke="#3fcaff" stroke-width="2" />
+  <rect x="175" y="130" width="30" height="10" rx="5" fill="#3fcaff" />
+  <polygon points="190,240 220,290 190,340 160,290" fill="#3fcaff" opacity="0.8" />
+  <text x="190" y="600" font-family="'Rajdhani', sans-serif" font-weight="700" font-size="20" fill="#ffffff" text-anchor="middle" letter-spacing="2">MECHA TITAN</text>
+  <text x="190" y="630" font-family="'Roboto', sans-serif" font-size="13" fill="#a4ffb0" text-anchor="middle">FULL SUIT INTERACTION</text>
+</svg>
