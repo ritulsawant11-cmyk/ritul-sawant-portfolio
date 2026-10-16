@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "echo 'Build complete'",
+    "build": "mkdir -p dist && cp -r index.html app.js src public ritul-sawant-cv.pdf partnership-lab pension-quest pension-steps dist/",
     "typecheck": "tsc --noEmit",
     "preview": "vite preview"
   },
