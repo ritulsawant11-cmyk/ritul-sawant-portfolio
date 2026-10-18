@@ -1202,7 +1202,7 @@ function App() {
 
   const handleNavigateHome = (sectionId) => {
     if (sectionId) {
-      window.location.hash = ;
+      window.location.hash = '#' + sectionId;
       const el = document.getElementById(sectionId);
       if (el) {
         el.scrollIntoView({ behavior: 'smooth' });

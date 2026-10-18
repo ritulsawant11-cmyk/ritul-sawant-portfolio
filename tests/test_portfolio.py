@@ -131,6 +131,14 @@ def run_suite():
     check('Architecture & Rationale' not in app_js, "'Architecture & Rationale' button removed")
     check('Game Design & Rationale' not in app_js, "'Game Design & Rationale' button removed")
 
+    # JavaScript Syntax & Compilation verification
+    check('= ;' not in app_js and '=;' not in app_js, "No broken assignment syntax in app.js")
+    import subprocess
+    js_mock = "var window = { location: { hash: '#/' }, addEventListener: function() {}, removeEventListener: function() {}, scrollTo: function() {} }; var document = { getElementById: function() { return null; }, createElement: function() { return { setAttribute: function(){}, appendChild: function(){}, style: {} }; }, createTextNode: function(s) { return { text: s }; }, createDocumentFragment: function() { return { appendChild: function(){} }; } }; var requestAnimationFrame = function(cb) { cb(); };"
+    clean_js = re.sub(r'document\.addEventListener.*', '', app_js)
+    res = subprocess.run(['osascript', '-l', 'JavaScript', '-e', js_mock, '-e', clean_js], capture_output=True, text=True)
+    check(res.returncode == 0, f"app.js parses and executes without JS syntax errors (code {res.returncode}): {res.stderr.strip()}")
+
     # --- 4. Check HTML ---
     index_path = os.path.join(PORTFOLIO_DIR, 'index.html')
     check(os.path.exists(index_path), "index.html exists")
