@@ -20,16 +20,16 @@ export interface ProjectData {
   category: string;
   tag: string;
   statusBadge: string;
-  featured: boolean;
+  featured?: boolean;
   summary: string;
-  problem: string;
-  methods: string[];
-  keyOutput: string;
+  problem?: string;
+  methods?: string[];
+  keyOutput?: string;
   liveUrl?: string | null;
   embedUrl?: string | null;
   toolUrl?: string | null;
-  sections: CaseStudySection[];
-  safeguardNotice: string;
+  sections?: CaseStudySection[];
+  safeguardNotice?: string;
 }
 
 export interface ExperienceData {

@@ -105,22 +105,31 @@ def run_suite():
     check('University of Stirling' in data, "MSc Sports Management at University of Stirling present")
     check('Parvatibai Chowgule College' in data, "BA Economics at Parvatibai Chowgule College present")
 
-    # Projects
-    check('Standard Life × Moneyhub' in data, "Featured project: Standard Life × Moneyhub present")
-    check('Partnership Lab' in data, "Project: Partnership Lab website present")
-    check('PensionSteps' in data, "Project: PensionSteps present")
-    check('PensionQuest' in data, "Project: PensionQuest present")
-    check('Workplace Pension Partner Discovery' in data, "Project: Nest partner discovery present")
-    check('Spotify × Uber' in data, "Project: Spotify × Uber present")
-
     # --- 3. Check App.js Standalone Bundle ---
     app_js_path = os.path.join(PORTFOLIO_DIR, 'app.js')
     check(os.path.exists(app_js_path), "Standalone client runtime exists (app.js)")
     with open(app_js_path, 'r', encoding='utf-8') as f:
         app_js = f.read()
 
-    check('case-study' in app_js, "app.js contains case-study deep-link routing")
-    check('featuredProject' in app_js, "app.js contains featured project spotlight handler")
+    # Projects: Exactly 3 Websites / Web Applications
+    check('Partnership Lab' in data and 'Partnership Lab' in app_js, "Project: Partnership Lab website present")
+    check('PensionSteps' in data and 'PensionSteps' in app_js, "Project: PensionSteps present")
+    check('PensionQuest' in data and 'PensionQuest' in app_js, "Project: PensionQuest present")
+
+    # Negative checks: Old individual case studies are removed from portfolio
+    check('Standard Life × Moneyhub' not in data and 'Standard Life × Moneyhub' not in app_js, "Standard Life × Moneyhub removed from portfolio cards")
+    check('Workplace Pension Partner Discovery' not in data and 'Workplace Pension Partner Discovery' not in app_js, "Nest partner discovery removed from portfolio cards")
+    check('Spotify × Uber' not in data and 'Spotify × Uber' not in app_js, "Spotify × Uber removed from portfolio cards")
+    check('// FEATURED CASE STUDY' not in app_js, "Featured Case Study section removed from Hero")
+
+    # Buttons & Text checks: Single 'Visit Website ↗', no rationale/case study buttons
+    check('Websites & Interactive Projects' in app_js, "Work section heading renamed to 'Websites & Interactive Projects'")
+    check('A selection of websites and interactive tools I have created' in app_js, "Specified introduction paragraph present")
+    check('Visit Website ↗' in app_js, "'Visit Website ↗' button present")
+    check('Read case study' not in app_js, "'Read case study' buttons removed")
+    check('Platform Overview & Rationale' not in app_js, "'Platform Overview & Rationale' button removed")
+    check('Architecture & Rationale' not in app_js, "'Architecture & Rationale' button removed")
+    check('Game Design & Rationale' not in app_js, "'Game Design & Rationale' button removed")
 
     # --- 4. Check HTML ---
     index_path = os.path.join(PORTFOLIO_DIR, 'index.html')
@@ -133,16 +142,15 @@ def run_suite():
     check('Instrument+Serif' in html, "index.html loads Instrument Serif editorial font")
 
     # --- 5. Check Live URLs and Route Integrity ---
-    check('#/case-studies/standard-life-moneyhub' in data and '#/case-studies/standard-life-moneyhub' in app_js, "Standard Life liveUrl uses plural case-studies route")
-    check('#/opportunity-lab/workplace-pension-partner-discovery' in data and '#/opportunity-lab/workplace-pension-partner-discovery' in app_js, "Nest liveUrl uses opportunity-lab route")
-    check('#/case-studies/spotify-uber' in data and '#/case-studies/spotify-uber' in app_js, "Spotify liveUrl uses plural case-studies route")
-    check('https://partnership-lab.vercel.app/#/' in data and 'https://partnership-lab.vercel.app/#/' in app_js, "Partnership Lab points to verified live publication")
+    check('https://partnership-lab.vercel.app/#/' in data and 'https://partnership-lab.vercel.app/#/' in app_js, "Partnership Lab points to verified live website")
     check(os.path.exists(os.path.join(PORTFOLIO_DIR, 'partnership-lab', 'index.html')), "Partnership Lab index.html exists for live serving")
     check(os.path.exists(os.path.join(PORTFOLIO_DIR, 'partnership-lab', 'js', 'app.js')), "Partnership Lab app.js router exists")
-    check('/pension-steps/' in data and '/pension-steps/' in app_js, "PensionSteps points to working web application tool (/pension-steps/)")
+
+    check('https://ritul-sawant-portfolio.vercel.app/pension-steps/' in data and 'https://ritul-sawant-portfolio.vercel.app/pension-steps/' in app_js, "PensionSteps points to verified live application")
     check(os.path.exists(os.path.join(PORTFOLIO_DIR, 'pension-steps', 'index.html')), "PensionSteps index.html exists for live tool serving")
     check(os.path.exists(os.path.join(PORTFOLIO_DIR, 'pension-steps', 'app.js')), "PensionSteps app.js interactive engine exists")
-    check('/pension-quest/' in data and '/pension-quest/' in app_js, "PensionQuest points to playable web game")
+
+    check('https://ritul-sawant-portfolio.vercel.app/pension-quest/' in data and 'https://ritul-sawant-portfolio.vercel.app/pension-quest/' in app_js, "PensionQuest points to verified live web game")
     check(os.path.exists(os.path.join(PORTFOLIO_DIR, 'pension-quest', 'index.html')), "PensionQuest index.html exists for live game serving")
     check(os.path.exists(os.path.join(PORTFOLIO_DIR, 'pension-quest', 'app.js')), "PensionQuest app.js interactive game engine exists")
 

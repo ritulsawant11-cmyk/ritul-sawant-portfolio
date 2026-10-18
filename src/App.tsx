@@ -3,7 +3,6 @@ import { portfolioData } from './data/portfolioData';
 import { Header } from './components/Header';
 import { Hero } from './components/Hero';
 import { Projects } from './components/Projects';
-import { ProjectDetail } from './components/ProjectDetail';
 import { About } from './components/About';
 import { Experience } from './components/Experience';
 import { Skills } from './components/Skills';
@@ -12,32 +11,19 @@ import { Footer } from './components/Footer';
 
 export const App: React.FC = () => {
   const [currentHash, setCurrentHash] = useState<string>(window.location.hash || '#/');
-  const [activeSlug, setActiveSlug] = useState<string | null>(null);
 
   useEffect(() => {
     const handleHashChange = () => {
       const hash = window.location.hash || '#/';
       setCurrentHash(hash);
 
-      // Support both #/case-study/:slug and #/project/:slug for backwards compatibility
-      if (hash.startsWith('#/case-study/') || hash.startsWith('#/project/')) {
-        const slug = hash.replace(/^#\/(case-study|project)\//, '').trim();
-        const found = portfolioData.projects.find(
-          (p) => p.slug === slug || (slug === 'partnership-lab' && p.slug === 'standard-life-moneyhub')
-        );
-        if (found) {
-          setActiveSlug(found.slug);
-          window.scrollTo(0, 0);
-          return;
-        }
-      }
-
-      setActiveSlug(null);
-
       // Smooth section scrolling
       const sectionMatch = hash.replace(/^#\/?/, '');
-      if (sectionMatch && !sectionMatch.startsWith('case-study/') && !sectionMatch.startsWith('project/')) {
-        const el = document.getElementById(sectionMatch);
+      if (sectionMatch) {
+        const targetId = (sectionMatch.startsWith('case-study') || sectionMatch.startsWith('project'))
+          ? 'work'
+          : sectionMatch;
+        const el = document.getElementById(targetId);
         if (el) {
           setTimeout(() => {
             el.scrollIntoView({ behavior: 'smooth' });
@@ -52,7 +38,6 @@ export const App: React.FC = () => {
   }, []);
 
   const handleNavigateHome = (sectionId?: string) => {
-    setActiveSlug(null);
     if (sectionId) {
       window.location.hash = `#${sectionId}`;
       const el = document.getElementById(sectionId);
@@ -65,13 +50,6 @@ export const App: React.FC = () => {
     }
   };
 
-  const handleSelectProject = (slug: string) => {
-    window.location.hash = `#/case-study/${slug}`;
-  };
-
-  const activeProject = portfolioData.projects.find((p) => p.slug === activeSlug);
-  const featuredProject = portfolioData.projects.find((p) => p.featured) || portfolioData.projects[0];
-
   return (
     <>
       <Header
@@ -80,33 +58,23 @@ export const App: React.FC = () => {
         onNavigateHome={handleNavigateHome}
       />
 
-      {activeProject ? (
-        <ProjectDetail
-          project={activeProject}
-          onBack={() => handleNavigateHome('work')}
+      <main id="main-content" role="main">
+        <Hero
+          profile={portfolioData.profile}
+          onNavigateSection={handleNavigateHome}
         />
-      ) : (
-        <main id="main-content" role="main">
-          <Hero
-            profile={portfolioData.profile}
-            featuredProject={featuredProject}
-            onNavigateSection={handleNavigateHome}
-            onSelectProject={handleSelectProject}
-          />
-          <Projects
-            projects={portfolioData.projects}
-            onSelectProject={handleSelectProject}
-          />
-          <About profile={portfolioData.profile} />
-          <Experience
-            experience={portfolioData.experience}
-            education={portfolioData.education}
-            certificates={portfolioData.certificates}
-          />
-          <Skills skills={portfolioData.skills} />
-          <Contact profile={portfolioData.profile} />
-        </main>
-      )}
+        <Projects
+          projects={portfolioData.projects}
+        />
+        <About profile={portfolioData.profile} />
+        <Experience
+          experience={portfolioData.experience}
+          education={portfolioData.education}
+          certificates={portfolioData.certificates}
+        />
+        <Skills skills={portfolioData.skills} />
+        <Contact profile={portfolioData.profile} />
+      </main>
 
       <Footer
         profile={portfolioData.profile}

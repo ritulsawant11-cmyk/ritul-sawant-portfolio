@@ -11,7 +11,7 @@ export const Header: React.FC<HeaderProps> = ({ profile, currentHash, onNavigate
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navItems = [
-    { label: 'Work', id: 'work' },
+    { label: 'Websites', id: 'work' },
     { label: 'About', id: 'about' },
     { label: 'Experience', id: 'experience' },
     { label: 'Skills', id: 'skills' },

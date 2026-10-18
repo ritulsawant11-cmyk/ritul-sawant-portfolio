@@ -12,7 +12,7 @@ export const Footer: React.FC<FooterProps> = ({ profile, onNavigateHome }) => {
   };
 
   const navItems = [
-    { label: 'Work', id: 'work' },
+    { label: 'Websites', id: 'work' },
     { label: 'About', id: 'about' },
     { label: 'Experience', id: 'experience' },
     { label: 'Skills', id: 'skills' },

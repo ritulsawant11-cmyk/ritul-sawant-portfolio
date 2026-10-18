@@ -32,26 +32,18 @@ The redesign draws inspiration from the layout, typography, and atmospheric dark
 
 ---
 
-## 2. Selected Work & Genuine Case Studies
+## 2. Selected Work: Websites & Interactive Projects
 
-All case studies are sourced from authentic project research and prototypes:
-1. **Standard Life × Moneyhub** *(Featured Primary Case Study)*:
-   - *Problem*: UK's £31.1B lost pensions problem and auto-enrolment member disengagement.
-   - *Method*: Open Finance API analysis, FCA Consumer Duty evaluation, and a 6-month employer-led pilot experiment design.
-2. **PensionSteps** *(Financial-Services Customer Operations Prototype)*:
-   - *Problem*: Inbound call handling bottlenecks, unprepared callers, and delays with Letters of Authority.
-   - *Method*: Operational insights from Diligenta translated into a 3-stage user preparation checklist with printable telephone worksheets.
-3. **Workplace Pension Partner Discovery (Nest)** *(Research Proposal in Progress)*:
-   - *Problem*: Structural auto-enrolment dormancy at UK master trusts.
-   - *Method*: Weighted 5-criteria partner evaluation matrix comparing workplace platforms (Perkbox, Benifex) and enterprise messaging (Braze).
-4. **Spotify × Uber** *(Commercial Analysis Archive)*:
-   - *Problem*: Cross-platform API integration, customer friction, and mutual brand value exchange.
-5. **Partnership Lab** *(Research Platform & Publication)*:
-   - *Problem*: Bridge commercial theory and practical execution in strategic partnerships without vague corporate rhetoric.
-   - *Method*: 7-step empirical partnership assessment methodology, Opportunity Lab proposals, and multi-chapter case studies.
-6. **PensionQuest** *(Educational Gamification Prototype)*:
-   - *Problem*: DC workplace pension leaver disengagement and anxiety.
-   - *Method*: Interactive narrative storybook ("Alex changes jobs") with zero timers, unpunished retries, and customer service enquiry tasks.
+The portfolio showcases three live web applications:
+1. **Partnership Lab**:
+   - *Link*: [https://partnership-lab.vercel.app/#/](https://partnership-lab.vercel.app/#/)
+   - *Description*: An independent research website exploring strategic partnerships across financial services, technology, and pensions.
+2. **PensionSteps**:
+   - *Link*: [https://ritul-sawant-portfolio.vercel.app/pension-steps/](https://ritul-sawant-portfolio.vercel.app/pension-steps/)
+   - *Description*: An interactive website helping workplace pension members prepare for common customer-service enquiries.
+3. **PensionQuest**:
+   - *Link*: [https://ritul-sawant-portfolio.vercel.app/pension-quest/](https://ritul-sawant-portfolio.vercel.app/pension-quest/)
+   - *Description*: A story-based educational web game exploring everyday workplace pension decisions.
 
 ---
 
